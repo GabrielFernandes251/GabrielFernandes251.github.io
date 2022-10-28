@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Fotos de gatos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>Clique aqui para ver mais. <a target="_blank" href="https://freecatphotoapp.com">fotos de gatos</a>.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Listas</h2>
+        <h3>Coisas que gatos adoram:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Gatos <em>amam</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 coisas que gatos odeiam:</h3>
+        <ol>
+          <li>Pulgas</li>
+          <li>Trovão</li>
+          <li>Outros gatos</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Gatos <strong>odeiam</strong> outros gatos.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Seu gato é de casa ou de rua?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Casa</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Rua</label>
+          </fieldset>
+          <fieldset>
+            <legend>Qual a personalidade do seu gato?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Amoroso</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Preguiçoso</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Arteiro</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
