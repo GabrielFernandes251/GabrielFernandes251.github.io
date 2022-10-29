@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/css/homeCalculator.css">
+    <link rel="stylesheet" href="src/css/calculator.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <img src="src/img/layers.png" alt="layers.png">
+        </ul>
+        <button class="buttonOfPage"><a class="guideCalculator" href="index.html">VOLTAR</a></button>
+    </header>
+    <main>
+        <section class="conteinerCalculator">
+            <p id="areaRes"></p>
+            <button class="botao02" onclick="clearAll()">DEL</button>
+            <button onclick="back()">&lt;</button>
+            <button onclick="selectedNumber('/')">÷</button>
+            <button onclick="selectedNumber('1')">1</button>
+            <button onclick="selectedNumber('2')">2</button>
+            <button onclick="selectedNumber('3')">3</button>
+            <button onclick="selectedNumber('*')">x</button>
+            <button onclick="selectedNumber('4')">4</button>
+            <button onclick="selectedNumber('5')">5</button>
+            <button onclick="selectedNumber('6')">6</button>
+            <button onclick="selectedNumber('+')">+</button>
+            <button onclick="selectedNumber('7')">7</button>
+            <button onclick="selectedNumber('8')">8</button>
+            <button onclick="selectedNumber('9')">9</button>
+            <button onclick="selectedNumber('-')">-</button>
+            <button onclick="selectedNumber(',')">,</button>
+            <button onclick="selectedNumber('0')">0</button>
+            <button class="botao02" onclick="calcular()">=</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/1032ce82d5.js" crossorigin="anonymous"></script>
+<script src="src/js/calculator.js"></script>
+
+</html>
