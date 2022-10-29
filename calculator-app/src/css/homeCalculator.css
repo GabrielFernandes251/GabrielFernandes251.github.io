@@ -1,0 +1,125 @@
+@charset "UTF-8"; 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #242424;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 10;
+}
+
+header > ul {
+    list-style-type: none;
+}
+
+header > ul > li {
+    color: white;
+    font-size: 30px;
+}
+
+/* header e conteiners */
+
+body {
+    background-color: #292929;
+}
+
+.conteiner{
+    color: white;
+    max-width: 700px;
+    margin: 10vh auto;
+}
+
+.conteiner h2 {
+    font-size: 2em;
+    color: #17C3B2;
+    margin-bottom: 10px;
+}
+
+.conteiner p {
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+.guideCalculator {
+    color: #17C3B2;
+    display: block;
+    padding: 0.8em 1.8em;
+    text-decoration: none;
+    transition: all .6s;
+}
+
+.guideCalculator:hover {
+    color: white;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #17C3B2;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #17C3B2;
+}
+
+/* From cssbuttons.io by @nikk7007 */
+.buttonOfPage {
+    margin-top: 10px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+   }
+   .buttonOfPage::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .buttonOfPage:hover::before {
+    width: 105%;
+   }
+   
+   .buttonOfPage:hover {
+    color: #111;
+   }
+   
+
+
+
+@media screen and (max-width: 700px) {
+    .conteiner {
+        margin: 5vh 20px;
+    }
+}
