@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: linear-gradient(to left, #1f2423, #171a18);
+}
+
+/* estilos padrão */
+main {
+    margin-bottom: 10%;
+}
+
+section {
+    max-width: 1100px;
+    margin: 8px auto;
+}
+
+article {
+    max-width: 900px;
+}
+
+/* LISTA DE OERIENTAÇÃO  */
+
+ul, ol {
+    margin: 0 30px;
+}
+
+li {
+    line-height: 2em;
+}
+
+a {
+    color: #ff4400be;
+}
+
+a:hover {
+    color: #ff4400;
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 10px 0 ;
+}
+
+.destaqueText {
+    color: yellow;
+    font-weight: bold;
+}
+
+.destextHTML {
+    color: orangered;
+}
+
+.tegsExemple {
+    background-color: #e4e4e41e;
+    color: orangered;
+}
+
+.setaTitleConteiner {
+    color: #00f8aefd;
+    font-size: 20px;
+}
+
+/* destaque da pagina - about  */
+
+#pagePrincipal {
+    margin: 0 auto 3% auto;
+}
+
+.destaquePage {
+    background-color: #010f20;
+    box-shadow: 0px 0px 10px #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    max-width: 1100px;
+    margin: 3% auto;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: auto 400px;
+    align-items: center;
+    padding: 30px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+#about img {
+    display: block;
+    width: 70%;
+    margin: 30px auto;
+}
+
+/* conteiner acesso aos componentes */
+
+.contentAccess {
+    display: block;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* fundamentos aprendizados conteiners */
+
+.titlesCurrents {
+    background-color: #010f20;
+    color: white;
+    margin: 0 10px;
+    border-radius: 4px;
+    box-shadow: 2px 5px 1px #0000003b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.btnStudent {
+    background-color: #181818;
+    color: white;
+    box-shadow: 0px 0px 10px #ffffffad;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2px 4px;
+    margin-left: 20px;
+    transition: all .8s;
+}
+
+.btnStudent:hover {
+    background-color: rgb(14, 13, 13);
+    box-shadow: 0px 0px 10px #00f8aefd;
+}
+
+.btnStudent:focus {
+    box-shadow: 0px 0px 10px #00f8aefd;
+}
+
+
+
+/* -------- titulos itens  --------- */
+
+.articlesCurrentItens {
+    background-color: #010f20c2;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0000008c;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.titleCurrent {
+    font-size: 2.4em;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+    padding: 3px 0 ;
+}
+
+.articlesCurrentItens p {
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
+/* área de códigos */ 
+
+.codeStudent {
+    max-width: 700px;
+}
+
+.codeStudent h3 {
+    font-size: 26px;
+    max-width: 300px;
+    border-bottom: 1px solid #ffffff38;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.codeStudent img {
+    margin: 20px 0;
+}
+
+#typesDice {
+    max-width: 900px;
+}
+
+/* ESTADO PADRÃO  */
+
+#conteinerBloco01, 
+#conteinerBloco02,
+#conteinerBloco03,
+#conteinerBloco04,
+#conteinerBloco05, 
+#conteinerBloco06 {
+    display: none;
+}
+
+/* style de imagens lado a lado  */
+
+.imgExempleObject {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.imgExempleObject img {
+    margin: 0 20px;
+}
+
+
+
+/* INPUTS DA PAGINA E BUTTONS */
+
+input {
+    background-color: white;
+    color: black;
+    width: 80%;
+    font-size: 16px;
+    padding: 2px;
+    margin: 2px 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 4px;
+    margin: 10px 0 ;
+}
+
+.respostas {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#btnLimparWhile, #limparDadosUser {
+    display: none;
+}
+
+/* quebra de leyaunt */
+
+@media screen and (max-width: 1100px) { 
+    .destaquePage {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #about {
+        display: block;
+    }
+
+    .destaquePage {
+        margin: 10px;
+    }
+}
+
+/* responsividade das imagens code */
+
+@media screen and (max-width: 500px) {
+    .codeStudent img {
+        width: 90%;
+    }
+
+    .titlesCurrents {
+        font-size: 0.7em;
+    }
+
+    .titleCurrent {
+        font-size: 2em;
+    }
+}

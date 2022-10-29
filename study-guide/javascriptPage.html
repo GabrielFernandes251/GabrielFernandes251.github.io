@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de JS</title>
+    <link rel="stylesheet" href="style/headerPage.css">
+    <link rel="stylesheet" href="style/currentPage.css">
+</head>
+
+<body>
+    <header>
+        <button id="btnOpenMenu">&#9776;</button>
+        <h1>Estudos de JS</h1>
+        <div></div>
+    </header>
+    <div class="layoutPage">
+        <aside id="menu">
+            <ul id="itensMenu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="htmlPage.html">GUIA DE HTML</a></li>
+                <li><a href="#">GUIA DE CSS</a></li>
+                <li><a href="javascriptPage.html">GUIA DE JAVASCRIPT</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </aside>
+        <main id="pagePrincipal">
+            <section class="destaquePage">
+                <div id="about">
+                    <article>
+                        <h2>Guia de Estudos de <span class="destaqueText">JS</span></h2>
+                        <p>Aqui você vai aprender javascript de forma descontraída, focando em fundamentos da linguagem,
+                            princípios e claro, entender como o mundo JS funciona!</p>
+                        <p>Javascript é a limguagem que domina a web de ponta a ponta, podendo oferecer interatividade para
+                            os usuários, JS também está presente no desenvolvimento mobile onde vem crescendo muito através
+                            dos framework. </p>
+                    </article>
+                    <img src="img/jsPage.png" alt="js.png">
+                </div>
+            </section>
+            <div class="contentAccess">
+                <!-- acesso ao conteudo -->
+                <section class="studentContent">
+                    <div class="titlesCurrents">
+                        <h2>Javascript <span class="setaTitleConteiner">&#10095;</span> Fundamentos</h2>
+                        <button class="btnStudent" id="btnOpenBloco#01">&#9782;</button>
+                    </div>
+                </section>
+                <!-- fundamentos -->
+                <section id="conteinerBloco01">
+                    <div class="articlesCurrentItens">
+                        <h2 class="titleCurrent">A História do Javascript</h2>
+                        <article>
+                            <p>O JavaScript chegou ao <span class="destaqueText">Netscape Navigator 2.0 </span>em setembro
+                                de 1995, com o objetivo cujo a sua
+                                principal função de tornar uma página web dinâmica. Em versões diferentes, a linguagem só
+                                evoluiu para melhor com recursos, facilidades e é possuí uma ótima linha de aprendizagem.
+                            </p>
+                        </article>
+                        <br>
+                        <br>
+                        <!-- VARIÁVEIS -->
+                        <h2 class="titleCurrent">Variável</h2>
+                        <article>
+                            <p>Algo que é fundamental saber em JS são definição de variáveis. Afinal, o que é variável?
+                                Variável
+                                são um local onde é armazenado temporarimente ou definitivo um valor onde pode mudar o seu
+                                valor. A variável é composto por três etapas, <span class="destaqueText">declaração, nome e
+                                    valor.</span> Com JS
+                                existe 3 formas de declarar uma variável <span class="destaqueText">var, let e const</span>.
+                            </p>
+                        </article>
+                        <br>
+                        <!-- variável com var  -->
+                        <div class="codeStudent">
+                            <h3>Declaração com VAR</h3>
+                            <p>Declaração com <span class="destaqueText">var</span> a variável se transforma de forma
+                                global, ou seja ela é
+                                acessável em todo o código JS.</p>
+                            <img src="printCode/variavelVar.png" alt="variavelVar.png">
+                        </div>
+                        <!-- variável com let -->
+                        <div class="codeStudent">
+                            <h3>Declaração com LET</h3>
+                            <p>Declaração com <span class="destaqueText">Let</span> a variável se transforma de forma local,
+                                ou seja ela é
+                                acessável apenas em uma única escopo.</p>
+                            <img src="printCode/variavelLet.png" alt="variavelLet.png">
+                        </div>
+                        <!-- variável com const -->
+                        <div class="codeStudent">
+                            <h3>Declaração com CONST</h3>
+                            <p>Declaração com <span class="destaqueText">Const</span> a variável se transforma de forma
+                                local, ou seja ela é
+                                acessável apenas em uma única escopo, o que diferencia é que o const tem valor fixo e não
+                                pode
+                                ser alterado.</p>
+                            <img src="printCode/variavelConst.png" alt="variavelConst.png">
+                        </div>
+                        <!-- CONCATENAÇÃO -->
+                        <div class="codeStudent">
+                            <h3>CONCATENAÇÃO DE VARIÁVEIS</h3>
+                            <p>Basicamente concatenação são formas de acessar uma variável de forma rápida e fácil. Existem
+                                duas formas de acessar:<span class="destaqueText"> com o + e com templeteString</span></p>
+                            <img src="printCode/concatenacaoMais.png" alt="concatenacaoMais.png">
+                            <h3>TempleteString</h3>
+                            <p>Com o mesmo objetivo de acessar uma variável, templeteString é necessário algumas mudanças,
+                                elas são: </p>
+                            <ul>
+                                <li>Utilizar crazes <span class="destaqueText">(` `)</span> </li>
+                                <li>Para acessar use o simbúlo do <span class="destaqueText">$ com chaves de abertura e
+                                        fechamento</span>.</li>
+                            </ul>
+                            <img src="printCode/templeteString.png" alt="templeteString.png">
+                        </div>
+                        <h2 class="titleCurrent">Estrutura de dados do Javascript</h2>
+                        <article>
+                            <p>Todas as linguagens de programação têm sua própria estrutura de dados embutida, mas essa
+                                estrutura frequentemente difere uma da outra. Este artigo busca listar os tipos de dados
+                                disponíveis na linguagem JavaScript e que propriedades eles possuem. Quando possível,
+                                comparações com outras linguagens serão apresentadas.</p>
+                        </article>
+                        <div id="typesDice" class="codeStudent">
+                            <h3>Tipagem Dinâmica</h3>
+                            <p><span class="destaqueText">JavaScript</span> é uma linguagem de tipagem dinâmica. Isso
+                                significa que você não necessita declarar o tipo de uma variável antes de sua atribuição. O
+                                tipo será <span class="destaqueText">automaticamente determinado</span> quando o programa
+                                for processado. Isso também significa que você pode reatribuir uma mesma variável com um
+                                tipo diferente:</p>
+                            <img src="printCode/typesDados.png" alt="typesDados.png">
+                            <h3>Tipos de Dados</h3>
+                            <p>A última versão <span class="destaqueText">ECMAScript</span> define sete tipos de dados:</p>
+                            <ul>
+                                <li>Boolean</li>
+                                <li>Null</li>
+                                <li>Undefined</li>
+                                <li>Number</li>
+                                <li>BigInt</li>
+                                <li>String</li>
+                                <li>Symbol</li>
+                                <li>e Object</li>
+                            </ul>
+                            <article>
+                                <h3>Valores Primitivos</h3>
+                                <p>Todos os tipos, com a exceção de objetos, definem valores imutáveis (valores que são
+                                    incapazes de mudar). Por exemplo e diferentemente da linguagem C, Strings são imutáveis.
+                                    Nós nos referimos a valores desse tipo como "valores primitivos".</p>
+                                <h3>Tipo "Boolean"</h3>
+                                <p>Boolean representa uma entidade lógica e pode ter dois valores: verdadeiro(true) ou
+                                    falso(false).</p>
+                                <h3>Tipo "Null"</h3>
+                                <p>O tipo Null tem exatamente um valor: null(nulo). Veja null e Null para mais detalhes.</p>
+                                <h3>Tipo "Undefined"</h3>
+                                <p>Uma variável que não foi atribuída a um valor específico, assume o valor
+                                    undefined(indefinido). Veja undefined e Undefined para mais detalhes.</p>
+                            </article>
+                        </div>
+                        <h2 class="titleCurrent">Operadores</h2>
+                        <article>
+                            <p>Em uma linguagem de programação é fundamental que você entenda o que são operadores de
+                                preferência possuir conhecimento com os operadores: </p>
+                            <ul>
+                                <li>Aritméticos</li>
+                                <li>Relacionais</li>
+                                <li>Lógicos</li>
+                            </ul>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>Operadores Aritméticos</h3>
+                            <p>Os operadores <span class="destaqueText">aritméticos</span> executam operações matemáticas,
+                                como adição e subtração com operandos. Há dois tipos de operadores matemáticos: <span
+                                    class="destaqueText">unário e binário</span>. Os operadores unários executam uma ação
+                                com um único operando. Operadores binários executam ações com dois operandos.</p>
+                            <br>
+                            <ul>
+                                <li>+ Mais </li>
+                                <li>- Menos</li>
+                                <li>* Multiplicação</li>
+                                <li>/ Divisão</li>
+                                <li>% Resto de Divisão</li>
+                                <li>** Potência</li>
+                            </ul>
+                            <h3>Operadores Relacionais</h3>
+                            <p>Operadores relacionais são utilizados para <span class="destaqueText">comparar
+                                    valores</span>, o resultado de uma expressão relacional é um valor booleano (<span
+                                    class="destaqueText">VERDADEIRO ou FALSO</span>). Os operadores relacionais são: igual,
+                                diferente, maior, menor, maior ou igual, menor ou igual.</p>
+                            <br>
+                            <ul>
+                                <li> &gt; Maior</li>
+                                <li> &lt; Menor </li>
+                                <li> &gt;= Maior ou igual</li>
+                                <li> &lt;= Menor ou igual</li>
+                                <li> == Igualdade</li>
+                                <li> === Indêntico</li>
+                                <li> != Diferente</li>
+                                <li> !== Exatamente diferente</li>
+                            </ul>
+                            <h3>Operadores Lógicos</h3>
+                            <p>
+                                Os <span class="destaqueText">operadores lógicos</span> entram quando precisamos realizar
+                                operações sobre um ou dois valores booleano (verdadeiro ou falso). ... Para realizar essa
+                                análise precisamos realizar uma operação sobre os valores booleanos que foram retornados
+                                pelas comparações e para isso usamos um <span class="destaqueText">operador lógico</span>.
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    !! Negação <span class="destaqueText">(não aceita valores diferente de true)</span>
+                                </li>
+                                <li>
+                                    && Conjunção <span class="destaqueText">(apenar valores true)</span>
+                                </li>
+                                <li>
+                                    || Desjunção <span class="destaqueText">(pode ser true ou false)</span>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+                <!-- Estrutura de controle  -->
+                <section class="studentContent">
+                    <div class="titlesCurrents">
+                        <h2>Javascript <span class="setaTitleConteiner">&#10095;</span> Estrutura de Controle</h2>
+                        <button class="btnStudent" id="btnOpenBloco#02">&#9782;</button>
+                    </div>
+                </section>
+                <section id="conteinerBloco02">
+                    <div class="articlesCurrentItens">
+                        <h2 class="titleCurrent">Estrutura de Controle com JS</h2>
+                        <article>
+                            <p>Estrutura de controle na programação com toda certeza você já ouviu falar, se não, conheça um
+                                pouco mais. <span class="destaqueText">São o famoso if e else</span> ou seja, se e se não.
+                                Bem simples. </p>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>Declarando um <em>if</em></h3>
+                            <p>A condicional<span class="destaqueText"> if</span> é uma estrutura condicional que executa a
+                                afirmação, dentro do bloco, se determinada condição for verdadeira. </p>
+                            <img src="printCode/estruturaIf.png" alt="estruturaIf.png">
+                            <h3>Declarando um<em> if e else</em> </h3>
+                            <p>Com o if e else tem duas possibilidades, faça isso quando for true e faça isso quando for
+                                false.</p>
+                            <img src="printCode/estruturaIfeElse.png" alt="estruturaIfeElse.png">
+                            <h3>Declarando um <em>else if</em></h3>
+                            <p>Else if é uma forma de adicionar multiplos controle de uma determinada condição ao envés de
+                                terminar no else. Por exemplo: </p>
+                            <img src="printCode/estruturaElseIf.png" alt="estruturaElseIf.png">
+                        </div>
+                    </div>
+                </section>
+                <!-- funções -->
+                <section class="studentContent">
+                    <div class="titlesCurrents">
+                        <h2>Javascript <span class="setaTitleConteiner">&#10095;</span> Funções </h2>
+                        <button class="btnStudent" id="btnOpenBloco#03">&#9782;</button>
+                    </div>
+                </section>
+                <section id="conteinerBloco03">
+                    <div class="articlesCurrentItens">
+                        <h2 class="titleCurrent">Funções com JS</h2>
+                        <article>
+                            <p>Funções são blocos de construção fundamentais em JavaScript. <span class="destaqueText">Uma
+                                    função é um procedimento deJavaScript</span> - um conjunto de instruções que executa uma
+                                tarefa ou calcula um valor. Para usar uma função, você deve defini-la em algum lugar no
+                                escopo do qual você quiser chamá-la.</p>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>Declarando uma função</h3>
+                            <p>Para definir uma função existe uma palavra reservada que é <span
+                                    class="destaqueText">function</span> e tabém
+                                possuí 3 etapas: </p>
+                            <ul>
+                                <li>&#10004; Nome da Função.</li>
+                                <li>&#10004; Lista de argumentos para a função, entre parênteses e separados por vírgulas.
+                                </li>
+                                <li>&#10004; Declarações JavaScript que definem a função, entre chaves { }.</li>
+                            </ul>
+                            <img src="printCode/declaracaoFuncao.png" alt="declaracaoFuncao.png">
+                            <p>Para funcionar, invoque a função criada como está acima. </p>
+                        </div>
+                        <!-- Arrow function -->
+                        <div class="codeStudent">
+                            <h3>Arrow Function</h3>
+                            <p>Uma expressão <span class="destaqueText">arrow function</span> possui uma sintaxe mais curta
+                                quando comparada a
+                                uma expressão de função (function expression) e não tem seu próprio <EM>this, arguments,
+                                    super
+                                    ou new.target</EM>. Estas expressões de funções são melhor aplicadas para funções que
+                                não
+                                sejam métodos, e elas não podem ser usadas como construtoras (constructors). </p>
+                            <img src="printCode/arrowFunction.png" alt="arrowFunction.png">
+                        </div>
+                        <!-- função com parâmetro -->
+                        <div class="codeStudent">
+                            <h3>Funções com parâmetro</h3>
+                            <p><span class="destaqueText">Parâmetro</span> é o nome que se da para a variável que nós
+                                declaramos na definição de uma <span class="destaqueText">função</span>. Depois das novas
+                                implementações do ES6 há três tipos de parâmetros que podemos utilizar ao definir as funções
+                                em <span class="destaqueText">Javascript</span>.</p>
+                            <img src="printCode/funcaoParametro.png" alt="funcaoParametro.png">
+                            <br>
+                            <input type="number" placeholder="digite um numero" id="n1Soma"> +
+                            <input type="number" placeholder="digite mais um número" id="n2Soma">
+                            <button class="btnPage" id="btnSoma">somar</button>
+                            <p class="respostas" id="res"></p>
+                        </div>
+                        <h2 class="titleCurrent">This e bind</h2>
+                        <article>
+                            <p>O <span class="destaqueText">this</span> é uma palavra reservada que referência um objeto. É muito utilizado em POO como o JS é uma linguagem de multiparadgma, ela também se encaixa. Já o <span class="destaqueText">bind</span> é um metodo que torna o acesso com o this de forma mais fácil. </p>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>This</h3>
+                            <p>Como dito o this referência um objeto, veja abaixo: </p>
+                            <img src="printCode/thisCode.png" alt="thisCode.png">
+                            <p>Opa! Olha só, o this está apontando para a saudacao que está dentro do objeto. </p>
+                            
+                            <h3>Bind</h3>
+                            <p>Enfim o bind, que serve para acessar o this de forma rápida e até mesmo armezanar em uma variável. Veja: </p>
+                            <img src="printCode/thisBindCode.png" alt="thisBindCode.png">
+                            <p>Lendo de forma simples: Foi criado uma constante que acessa o objeto e a função passado, com bind acessa o objeto que o this faz referência. </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- ----- objetos ------ -->
+                <section class="studentContent">
+                    <div class="titlesCurrents">
+                        <h2>Javascript <span class="setaTitleConteiner">&#10095;</span> Objetos </h2>
+                        <button class="btnStudent" id="btnOpenBloco#04">&#9782;</button>
+                    </div>
+                </section>
+                <section id="conteinerBloco04">
+                    <div class="articlesCurrentItens">
+                        <h2 class="titleCurrent">Objetos com JS</h2>
+                        <article>
+                            <p>A linguagem JavaScript é projetada com base em um simples <span
+                                    class="destaqueText">paradigma orientado a objeto</span>. Um objeto é uma coleção de
+                                propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. Um
+                                valor de propriedade pode ser uma função, que é então considerada um método do objeto. Além
+                                dos objetos que são pré-definidos no browser, você pode definir seus próprios objetos.
+                            </p>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>Visão geral de objetos</h3>
+                            <p>Objetos em JavaScript, assim como em muitas outras linguagens de programação, podem ser
+                                comparados com objetos na vida real. O conceito de objetos em JavaScript pode ser entendido
+                                com objetos tangíveis da vida real.</p>
+                            <br>
+                            <br>
+                            <p>Em JavaScript, um objeto é uma entidade independente, com propriedades e tipos. Compare-o com
+                                uma xícara, por exemplo. Uma xícara é um objeto, com propriedades. Uma xícara tem uma cor,
+                                uma forma, peso, um material de composição, etc. Da mesma forma, objetos em JavaScript podem
+                                ter propriedades, que definem suas características.
+                            </p>
+                            <h3>Declarando um Objeto</h3>
+                            <p>Para declarar um object é necessário usar as famosas chaves <span class="destaqueText">{
+                                    }</span> abrir e fechar. Sem mistério, o objeto é composto por 3 etapas: </p>
+                            <ul>
+                                <li class="destaqueText">nome</li>
+                                <li class="destaqueText">atributo</li>
+                                <li class="destaqueText">propriedade</li>
+                            </ul>
+                            <div class="imgExempleObject">
+                                <img src="printCode/objectForma01.png" alt="objectForma01.png">
+                                <img src="printCode/objectForma02.png" alt="objectForma02.png">
+                            </div>
+                            <br>
+                            <h3>Manipulando Object </h3>
+                            <p>Certo, você já sabe como criar um objeto com JS, más como utilizar o atributo criado? É isso
+                                que você saberá agora, veja abaixo. </p>
+                            <br>
+                            <p>Para capturar um atributo é bem simples, segue exemplo: </p>
+                            <img src="printCode/manipulandoObject.png" alt="manipulandoObject.png">
+                            <h3>Destructuring</h3>
+                            <p><span class="destaqueText">Destructuring</span> nada mais é que uma forma de extrair os
+                                atributos podendo criar uma variável com aquele atributo, segue exemplo: </p>
+                            <img src="printCode/destructuring.png" alt="destructuring.png">
+                        </div>
+                    </div>
+                </section>
+                <!-- Arrey de objetos -->
+                <section class="studentContent">
+                    <div class="titlesCurrents">
+                        <h2>Javascript <span class="setaTitleConteiner">&#10095;</span> Array </h2>
+                        <button class="btnStudent" id="btnOpenBloco#05">&#9782;</button>
+                    </div>
+                </section>
+                <section id="conteinerBloco05">
+                    <div class="articlesCurrentItens">
+                        <h2 class="titleCurrent">Array com JS</h2>
+                        <article>
+                            <p>O <span class="destaqueText">JavaScript Array</span> faz parte dos objetos globais da
+                                linguagem e é utilizado para armazenar uma coleção de elementos em uma única variável. Na
+                                prática, o array é uma <span class="destaqueText">estrutura de dados que contém um índice
+                                    numérico</span> e um elemento, que pode ser de qualquer tipo primitivo de dados, um
+                                objeto ou, até mesmo, um outro array</p>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>Criando um Array </h3>
+                            <p>Para criar um array é bem semelhante com o objetos, é claro que possuí suas diferenças, veja
+                                elas: </p>
+                            <ul>
+                                <li>Um array é necessário <span class="destaqueText"> &#91; &#93;</span></li>
+                                <li>Os valores são passados através de aspas, seja<span class="destaqueText"> simples ou
+                                        dupla</span>.</li>
+                                <li>E os valores são separados por <span class="destaqueText">vírgula</span>.</li>
+                            </ul>
+                            <img src="printCode/declaracaoArray.png" alt="declaracaoArray.png">
+                            <h3>Manipulando um array</h3>
+                            <p>Diferente do objeto, para ter acesso a um array passamos uma índice númerica. Ou seja para
+                                ter acesso utilize o nome do array declarado e [ número da índice ] Segue exemplo: </p>
+                            <img src="printCode/acessoArray.png" alt="acessoArray.png">
+                        </div>
+                    </div>
+                </section>
+                <!-- REPETIÇÕES EM JAVASCRIPT -->
+                <section class="studentContent">
+                    <div class="titlesCurrents">
+                        <h2>Javascript <span class="setaTitleConteiner">&#10095;</span> Repetições </h2>
+                        <button class="btnStudent" id="btnOpenBloco#06">&#9782;</button>
+                    </div>
+                </section>
+                <section id="conteinerBloco06">
+                    <div class="articlesCurrentItens">
+                        <h2 class="titleCurrent">Estrutura de Repetições</h2>
+                        <article>
+                            <p>As <span class="destaqueText">estruturas de repetição</span> são úteis, por exemplo, para
+                                repetir uma série de operações semelhantes que são executadas para todos os elementos de uma
+                                lista ou de uma tabela de dados, ou simplesmente para repetir um mesmo processamento até que
+                                uma certa condição seja satisfeita.</p>
+                            <br>
+                        </article>
+                        <div class="codeStudent">
+                            <h3>Repetições</h3>
+                            <p>Existem 3 formas de definir uma estrutura de repetições na programação: </p>
+                            <ul>
+                                <li>While</li>
+                                <li>Do while</li>
+                                <li>For</li>
+                            </ul>
+                            <h3>While</h3>
+                            <p>O laço while, um dos mais simples em Javascript, testa uma determinada condição no início de
+                                cada volta do laço e continua fazendo isso enquanto (while) a expressão condicional for
+                                avaliada como true.</p>
+                            <img src="printCode/while.png" alt="while.png">
+                            <div>
+                                <p class="respostas" id="resUmaDez"></p>
+                                <button id="btnLimparWhile">Limpar</button>
+                            </div>
+                            <button id="btnContarUmADez">CONTAR DE 1 ATÉ 10</button>
+                            <h3>Do while</h3>
+                            <p> O <span class="destaqueText">do/while</span> tem quase o mesmo funcionamento que o while, a
+                                diferença é que com o uso dele teremos os comandos executados ao menos uma única vez.</p>
+                            <img src="printCode/doWhile.png" alt="doWhile.png">
+                            <h3>For</h3>
+                            <p>A instrução for cria um loop que <span class="destaqueText">consiste em três expressões
+                                    opcionais</span>, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma
+                                declaração ou uma sequência de declarações executadas em sequência.</p>
+                            <br>
+                            <p>Veja dessa forma: <span class="destaqueText">inicio ; teste ; incremento</span> </p>
+                            <img src="printCode/for.png" alt="for.png">
+                            <p>Ou seja, comece com i valendo 2, enquanto i &lt; for menor ou igual a 10, a cada loop pule
+                                dois números. </p>
+                            <h3>For in</h3>
+                            <p>O laço <span class="destaqueText">for...in</span> interage sobre propriedades enumeradas de
+                                um objeto, na ordem original de inserção. O laço pode ser executado para cada propriedade
+                                distinta do objeto.</p>
+                            <br>
+                            <p>É uma excelente forma de percorrer um objeto ou um array. </p>
+                            <h4>Percorrendo um <span class="destaqueText">objeto</span> com for in</h4>
+                            <img src="printCode/forInObject.png" alt="forInObject.png">
+                            <p>Dessa forma vai percorrer cada item do objeto e mostrar da forma na qual você desejar, legal
+                                né!?</p>
+                            <h4>Percorrendo um <span class="destaqueText">array</span> com for in</h4>
+                            <img src="printCode/forInArray.png" alt="forInArray.png">
+                            <h4>Preencha abaixo para um exemplo real:</h4>
+                            <input type="text" placeholder="digite o seu nome..." id="nameUser" size="30">
+                            <br>
+                            <input type="email" name="email" placeholder="digite o seu email..." size="30" id="emailUser">
+                            <br>
+                            <div>
+                                <p id="answerTest"></p>
+                                <button id="limparDadosUser">Limpar</button>
+                            </div>
+                            <button id="submitVerification">VERICAR DADOS</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="js/menu.js"></script>
+<script src="js/openItensCurrent.js"></script>
+<script src="js/interatividadePage.js"></script>
+<script src="js/testForInExemple.js"></script>
+
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: #1BFD9C;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 6px;
+}
+
+#menu {
+    background-color: #171a18;
+    width: 0;
+    height: 91vh;
+    transition: all .8s;
+}
+
+#menu ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+#menu li {
+    line-height: 6em;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+#menu a:hover {
+    background-color: #f5f5dc10;
+}
+
+.layoutPage {
+    display: flex;
+}
+
+#btnOpenMenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1BFD9C;
+    font-size: 27px;
+}
+
+
+
+@media screen and (max-width: 660px) {
+    #menu {
+        top: 52px;
+    }
+    #menu a:hover {
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .titleHeader {
+        font-size: 1.5em;
+    }
+
+    header {
+        margin: 0;
+        padding: 10px 10px;
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    
+    
+    #menu a {
+        display: block;
+        line-height: 4em;
+    }
+}

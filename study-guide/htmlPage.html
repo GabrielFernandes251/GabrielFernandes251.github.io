@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de HTML</title>
+    <link rel="stylesheet" href="style/headerPage.css">
+    <link rel="stylesheet" href="style/currentPage.css">
+</head>
+
+<body>
+    <header>
+        <button id="btnOpenMenu">&#9776;</button>
+        <h1>Estudos de HTML</h1>
+        <div></div>
+    </header>
+    <div class="layoutPage">
+        <aside id="menu">
+            <ul id="itensMenu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="htmlPage.html">GUIA DE HTML</a></li>
+                <li><a href="#">GUIA DE CSS</a></li>
+                <li><a href="javascriptPage.html">GUIA DE JAVASCRIPT</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+        </aside>
+
+    <main id="pagePrincipal">
+        <section class="destaquePage">
+            <div id="about">
+                <article>
+                    <h2><span class="destextHTML">HTML: Linguagem de Marcação de Hipertexto</span></h2>
+                    <p><span class="destextHTML">HTML</span> (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
+                </article>
+                <img src="img/HTMLpage.png" alt="htmlpage.png">
+            </div>
+        </section>
+
+        <div class="contentAccess">
+            <!-- acesso ao conteudo -->
+            <section class="studentContent">
+                <div class="titlesCurrents">
+                    <h2>HTML <span class="setaTitleConteiner">&#10095;</span> Tutoriais para iniciantes</h2>
+                    <button class="btnStudent" id="btnOpenBloco#01">&#9782;</button>
+                </div>
+            </section>
+
+            <!-- Tutorial para iniciantes  -->
+            <section id="conteinerBloco01">
+                <div class="articlesCurrentItens">
+                    <h2 class="titleCurrent">Tutoriais para iniciantes</h2>
+                    <article>
+                        <p><span class="destextHTML">"Hipertexto"</span> refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.
+                        </p>
+                        <br>
+                        <p>O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um <span class="destextHTML">navegador da Web</span> . A marcação HTML inclui "elementos" especiais, como <span class="tegsExemple">&lt;head&gt;, &lt;title&gt;,  &lt;body&gt;,  &lt;header&gt;,  &lt;footer&gt;,  &lt;article&gt;,  &lt;section&gt;,  &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;nav&gt;, &lt;input&gt; e muitos outros.</span></p>
+                    </article>
+                    <br>
+                    <br>
+                    <!-- VARIÁVEIS -->
+                    <h2 class="titleCurrent">Conceitos básicos</h2>
+                    <article>
+                        <p>Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome do elemento entre "&lt;" e "&gt;". O nome de um elemento dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura. Por exemplo, a tag &lt;title&gt; pode ser escrita como &lt;title&gt;, &lt;TITLE&gt; ou de qualquer outra forma.</p>
+                        <br> 
+                        <p>Os artigos abaixo podem ajdudá-lo a aprender mais sobre HTML. </p>
+
+                        <ul>
+                            <li>Introdução ao HTML</li>
+                            <p>Se você é novo <span class="destextHTML">no desenvolvimento web</span>, não deixe de ler nosso artigo <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">O Básico do HTML </a>para aprender o que é HTML e como usá-lo.</p>
+
+                            <li>Tutoriais HTML</li>
+                            <p>Para artigos sobre como usar o HTML, assim como tutoriais e exemplos completos, confira nossa<a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML" target="_blank"> Área de Aprendizado de HTML</a>.</p>
+
+                            <li>Referência do HTML</li>
+                            <p>Em nossa extensa seção de <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference" target="_blank">Referência do HTML</a>, você encontrará os detalhes sobre cada elemento e atributo do HTML.</p>
+                        </ul>
+                        <br>
+                    </article>                   
+            </section>
+
+            <!-- Elementos  -->
+            <section class="studentContent">
+                <div class="titlesCurrents">
+                    <h2>HTML <span class="setaTitleConteiner">&#10095;</span> Elementos </h2>
+                    <button class="btnStudent" id="btnOpenBloco#02">&#9782;</button>
+                </div>
+            </section>
+
+            <section id="conteinerBloco02">
+                <div class="articlesCurrentItens">
+                    <article>
+                        <h2 class="titleCurrent">Elementos HTML </h2>
+                        <p>Elemento HTML é uma parte de uma página da internet. Um elemento é qualquer objeto identificável dentro de um documento, por exemplo, um caractere, palavra, imagem, parágrafo ou célula de planilha.</p>
+                    </article>
+                    <div class="codeStudent">
+                        <h3>&lt; p &gt; </h3>
+                        <p>O elemento HTML &lt; p &gt; representa um parágrafo.</p>
+                        <img src="printCode/paragrafo.png" alt="paragrafo.png">
+
+                        <h3>&lt; br &gt; </h3>
+                        <p>A teg &lt; br &gt; é utilizada quando desejamos fazer uma quebra de linha/escrever abaixo. </p>
+                        <p>Quebra de nº 1 <br> Quebra de nº 2 <br>Fim!</p>
+                        <img src="printCode/quebraParagrafo.png" alt="quebraParagrafo.png">
+
+                        <h3>&lt; q &gt; </h3>
+                        <p>A teg &lt; q &gt; insere aspas de forma semântica. Utilizando as aspas do teclado não é nada errado más pela teg é uma alternativa. </p>
+                        <p><q>Esse é um parágrafo com aspas.</q></p>
+                        <img src="printCode/aspasHTML.png" alt="aspasHTML.png">
+
+                        <h3>&lt; title &gt; </h3>
+                        <p>A teg &lt; title &gt; da um titulo para um determinado elemento de forma <q>externa</q>.</p>
+                        <p  title="Esse é o titulo do parágrafo.">passe o mouse e veja o titulo</p>
+                        <img src="printCode/titleHtml.png" alt="titleHtml.png">
+
+                        <h3>&lt; abbr &gt; </h3>
+                        <p>A teg &lt; abbr &gt; nada mais é que uma maneira de abreviar seguindo os movimentos de passar o mouse. </p>
+                        <p>Teste o que é <abbr title="HyperText Markup Language">HTML</abbr>? </p>
+                        <img src="printCode/abbrteg.png" alt="abbrteg.png">
+
+                        <h3>&lt; abbr &gt; </h3>
+                        <p>A teg &lt; abbr &gt; nada mais é que uma maneira de abreviar seguindo os movimentos de passar o mouse. </p>
+                        <p>Teste o que é <abbr title="HyperText Markup Language">HTML</abbr>? </p>
+                        <img src="printCode/abbrteg.png" alt="abbrteg.png">
+                    </div>
+                </div>
+            </section>
+
+            <!-- lista   -->
+            <section class="studentContent">
+                <div class="titlesCurrents">
+                    <h2>HTML <span class="setaTitleConteiner">&#10095;</span> Listas ordenadas e não ordenadas </h2>
+                    <button class="btnStudent" id="btnOpenBloco#03">&#9782;</button>
+                </div>
+            </section>
+
+            <section id="conteinerBloco03">
+                <div class="articlesCurrentItens">
+                    <article>
+                        <h2 class="titleCurrent">Listas em HTML </h2>
+                        <p>Listas em HTML são uma maneira de organizar muitas coisas de diversos maneiras diferentes podendo até criando uma lista para itens do menu. </p>
+                    </article>
+                    <div class="codeStudent">                        
+                        <h3>&lt; ul &gt; - <span class="destextHTML"> Lista não ordenadas</span> </h3>
+                        <p>A teg &lt; ul &gt; é uma lista que não requer uma ordem númerica. Um conceito muito importante de ser ditos é que ambos possuiem a teg &lt; li &gt; que seria os itens da lista. </p>
+                        
+                        <p>Itens de um menu: </p>
+                        <ul>
+                            <li>Home</li>
+                            <li>Serviços</li>
+                            <li>Saiba mais</li>
+                            <li>Entrar</li>
+                        </ul>
+
+                        <img src="printCode/listaNaoOrdenadas.png" alt="listaNaoOrdenadas.png">
+                        
+                        <p>Se tratando de itens de menu o nosso amigo <a href="">CSS</a> daria conta disso.</p>
+
+                        <h3>&lt; ol &gt; - <span class="destextHTML">Lista ordenas</span> </h3>
+                        <p>A teg &lt; ol &gt; é uma lista que sim, requer uma ordem númerica. Seguindo a mesma ordem da anterior a sintaxe de execução é exatamente igual. </p>
+                        <p>lista de aprovados:</p>
+                        <ol>
+                            <li>João - nota 10 </li>
+                            <li>Ana - nota 8 </li>
+                            <li>Fernando - nota 7</li>
+                        </ol>
+
+                        <img src="printCode/listaOrdenadas.png" alt="listaOrdenadas.png">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    </div>
+</body>
+<script src="js/menu.js"></script>
+<script src="js/openItensCurrent.js"></script>
+<script src="js/interatividadePage.js"></script>
+<script src="js/testForInExemple.js"></script>
+
+</html>
+</html>

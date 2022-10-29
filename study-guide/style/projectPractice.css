@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #1f2423, #171a18);
+}
+
+/* header */
+
+header {
+    background-image: linear-gradient(to left, #1f2423, #171a18);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+header h1::first-letter {
+    font-size: 2em;
+    font-family: 'Inspiration', cursive;
+    color: #1BFD9C;
+}
+
+header h1 {
+    margin-right: 10px;
+}
+
+
+
+/* ------- area and emphasis ------ */
+
+.areaEmphasis {
+    background-image: linear-gradient(to left, #1f2423, #171a18);
+    padding: 20px 10px ;
+    height: 100%;
+}
+
+.areaTextEmphasis {
+    color: white;
+    max-width: 800px;
+    margin: 5% auto;
+    transition: all .6s;
+}
+
+.areaTextEmphasis h2 { 
+    color: #1bfd9be3; 
+    font-style: italic;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+
+.areaTextEmphasis h2::first-letter {
+    font-family: 'Inspiration', cursive; 
+    font-size: 2em;
+}
+
+
+.areaTextEmphasis p {
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+/* -------- layout efect ------ */
+
+.layoutEmphasis {
+    background-color: #010f20;
+    border-radius: 9% 91% 11% 89% / 93% 14% 86% 7%  ;
+    max-width: 1100px;
+    padding: 60px 50px 100px 50px;
+    margin: auto;
+    transition: all .7s;
+}
+
+.layoutEmphasis:hover {
+   background-color: #010f20;
+}
+
+/* imagens relevantes de linguagens  */
+
+#imgReference {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px auto 40px auto;
+}
+
+#imgReference img {
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    padding: 10px ;
+    transition: all .6s;
+}
+
+#imgReference img:hover {
+    transform: translateY(-1em);
+    filter: drop-shadow(0 0 0.4em #00ff8870);
+}
+
+#pageLetsGo img {
+    border-radius: 0;
+    width: 100px;
+    border-radius: 81% 19% 5% 95% / 100% 5% 95% 0%  ;
+    padding: 10px ;
+    transition: all .6s;
+}
+
+/* division and section */
+
+.divisionSection {
+    background-image: linear-gradient(to left, #540bffe3, #520ac7);
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0%  ; 
+    filter: drop-shadow(0 0 0.5em #6200ff70);
+    max-width: 700px;
+    margin: auto;
+    padding: 0 50px;
+    height: 30px;
+}
+
+/* page buttons  */
+
+.btnHomePage {
+    --green: #1BFD9C;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 70px;
+    text-decoration: none;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    margin: 20px 0;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+   }
+   
+.btnHomePage:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+   
+.btnHomePage:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+   
+.btnHomePage:hover:before {
+    transform: translateX(15em);
+}
+   
+   
+@media screen and (max-width: 700px) {
+
+    header {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    #btnMenu {
+        display: block;
+        margin: auto;
+    }
+
+    header h1 {
+        padding-top: 0px;
+        font-size: 1.7em;
+    }
+
+
+    .areaEmphasis {
+        background-image: linear-gradient(to left, #1f2423, #171a18);
+        height: 100vh;
+    }
+
+    .areaTextEmphasis {
+        padding: 60px 30px;
+    }
+
+    .layoutEmphasis {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    background-image: linear-gradient(to left, #1f2423, #171a18);
+}
+
+section  {
+    background-color: #444444;
+    color: white;
+    border-radius: 20px;
+    padding: 10px; 
+    max-width: 1100px;
+    margin: 3% auto;
+}
+
+.imageList {
+    width: 250px;
+}
+
+#conteinerAbout {
+    display: grid; 
+    grid-template-columns: auto  auto;
+    align-items: center;
+    max-width: 1100px;
+    margin: 5% auto;
+}
+
+#conteinerAbout article {
+    max-width: 800px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+#conteinerAbout h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #1a1919a4;
+}
+
+#conteinerAbout p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 20px 0 ;
+}
+
+.aboutImageName img {
+    display: block;
+    margin: auto;
+}
+
+.iconsSvg {
+    width: 24px;
+}
+
+/* list icons  */
+
+.iconsList {
+    display: block;
+    width: 100%;
+}
+
+.iconsList a {
+    color: #ffffff;
+    background-color: #1BFD9C;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px 3px;
+    margin: 3px;    
+    text-decoration: none;
+    margin-left: 3px;
+    transition: all .7s;
+}
+
+.iconsList a:hover {
+    background-color: #01ac62;
+    color: white;
+    padding: 10px 0 ;
+}
+
+.iconsList img {
+    margin: 0 7px;
+}
+
+@media screen and (max-width: 1100px) {
+    section {
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #conteinerAbout {
+        display: block; 
+    }
+
+    .imageList {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #conteinerAbout article {
+        max-width: 100%;
+        padding: 0 5px;
+        margin: auto;
+    }
+    
+}
